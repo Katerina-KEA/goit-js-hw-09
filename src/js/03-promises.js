@@ -30,3 +30,4 @@ function onFormSubmit(event) {
       });
   }
 }
+form.addEventListener('submit', onFormSubmit);
