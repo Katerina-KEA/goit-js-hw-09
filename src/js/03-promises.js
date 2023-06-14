@@ -22,6 +22,7 @@ function onFormSubmit(event) {
 
   for (let i = 0; i < amount; i += 1) {
     const currentPosition = i + 1;
+    
     createPromise(currentPosition , delay )
       .then(({ position, delay }) => {
         Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
